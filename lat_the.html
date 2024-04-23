@@ -6,12 +6,14 @@
   <title>Page Title</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='lat_the.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <script src='lat_the.js'></script>
 </head>
 <body>
   <div class="wrapper">
     <h1>Trò chơi lật thẻ - Vĩnh Thuận 64132409</h1>
-    <h3>Bấm vào thẻ để bắt đầu <br> Trò chơi kết thúc khi được lật được hết các thẻ giống nhau</h3>
     <div id="container">
       <div class="card" onclick="latThe(this)">
         <img src="card_img/img_blank.png" alt="img1">
@@ -44,9 +46,9 @@
         <img src="card_img/img_blank.png" alt="img5">
       </div>
     </div>
-    <form>     
-        <input type="button" value="Reset" onclick="Reset()">   
-    </form>
+    <button class="button" onclick="Reset()">
+      <span class="button-content">RESET!</span>
+    </button>
   </div>
 </body>
 </html>
